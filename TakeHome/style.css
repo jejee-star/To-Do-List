@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to bottom, #CFF4D2, #7BE495);
+    font-family: "Poller One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #f9f9fd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #F28482;
+    text-align: center;
+    font-family: "Poller One", sans-serif;;
+}
+
+form {
+    background-color: #FFBFC5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#itemInput {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #d3d3d3;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#itemInput:focus{
+    border-color: rgb(154, 214, 235);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #68D89B;
+    color: beige;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Poller One", sans-serif;
+}
+
+button:hover {
+    background-color: #d8f3dc;
+    color: #3A9295;
+}
+
+#errorMessage {
+    color: #FF0000;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#toDoList {
+    list-style: none;
+    padding: 0;
+    width: 90%;
+    max-width: 500px;
+}
+
+#toDoList li {
+    background-color: #2A4421;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+    font-family: "Caprasimo", serif;
+    font-weight: 400;
+}
+
+#toDoList li :hover {
+    transform: scale(1.02);
+}
+
+#toDoList li.completed {
+    text-decoration: line-through;
+    color: lightslategrey;
+    opacity: 0.7;
+}
+
+.delete-btn {
+    background-color: red;
+    color: #d3d3d3;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-btn :hover {
+    background-color: rgb(77, 1, 1);
+}
